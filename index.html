@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+  	<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--21861115 조경아 -->
+    <style>
+    body { color:#000000;
+  				font-family: "돋움" ;
+  				text-align:center;
+          font-size:100%;}
+
+    ul {list-style-type: none;}
+
+    a:link{
+          color:black;
+          text-decoration: none;
+        }
+        a:visited{
+          color:#8C8C8C;
+        }
+
+    [class*="c_"] {
+            float:left;
+            padding:10px;
+          }
+          /* 너비가 600픽셀 미만인 스마트폰을 위한 기본 설정 */
+          [class*="c_"] {
+            width:100%
+          }
+          /*너비가 600픽셀 이상인 태블릿을 위한 설정 */
+          [class*="c_"]{
+                float:left;
+                padding:10px;
+              }
+              /*너비가 600픽셀 미만인 스마트폰을 위한 기본 설정*/
+              [class*="c_"]{
+                width:100%;
+              }
+              /*너비가 600픽셀 이상인 테블릿 위한 기본 설정*/
+              @media only screen and (min-width: 600px){
+                .c_m_1 {width:8.33%;}
+                .c_m_2 {width:16.66%;}
+                .c_m_3 {width:25%;}
+                .c_m_4 {width:33.33%;}
+                .c_m_5 {width:41.66%;}
+                .c_m_6 {width:50%;}
+                .c_m_7 {width:58.33%;}
+                .c_m_8 {width:66.66%;}
+                .c_m_9 {width:75%;}
+                .c_m_10 {width:83.33%;}
+                .c_m_11 {width:91.66%;}
+                .c_m_12 {width:100%;}
+              }
+              /*너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등*/
+              @media only screen and (min-width:768px){
+                .c_1 {width:8.33%;}
+                .c_2 {width:16.66%;}
+                .c_3 {width:25%;}
+                .c_4 {width:33.33%;}
+                .c_5 {width:41.66%;}
+                .c_6 {width:50%;}
+                .c_7 {width:58.33%;}
+                .c_8 {width:66.66%;}
+                .c_9 {width:75%;}
+                .c_10 {width:83.33%;}
+                .c_11 {width:91.66%;}
+                .c_12 {width:100%;}
+
+
+
+
+    #page {
+      width:960px;
+      margin:0 auto;
+      text-align:center;
+      font-family:'Noto Sans KR', '굴림', '고딕체' ;
+    }
+    header #logo {
+      float:left;
+      margin:20px 0 0 20px;
+
+    }
+    header #moto {
+      float: left;
+      margin:30px 0 0 20px;
+    }
+    header #top_menu {
+      float:right;
+      margin:35px 0 0 0;
+      font-size:0.9em;
+
+    }
+    header #top_menu li {
+      display:inline;
+    }
+    .line {
+      margin-top:1.000em;
+      border-top: solid 1px #cccccc;
+
+    }
+
+
+    main {
+      margin-top:10px;
+    }
+
+    }
+    #banner ul {
+      margin-top: 5px;
+      margin-left: -5%;
+    }
+    #banner li {
+      display:inline;
+      text-align:center;
+    }
+    #banner {
+      margin-top:100px;
+
+    }
+
+    #banner1 ul{
+      margin-top:30px;
+      background-color:#F6F6F6;
+      height:400px;
+      font-family: 'Shrikhand'
+    }
+    #banner1 li img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  }
+
+    #banner1 li {
+      list-style-type:none;
+    }
+
+
+    #banner2 ul{
+      margin-top:30px;
+      background-color:#D5D5D5;
+      height:400px;
+      font-family: 'Shrikhand'
+    }
+    #banner2 li img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  }
+
+    #banner2 li {
+      list-style-type:none;
+    }
+
+    #banner3 ul{
+      margin-top:30px;
+      background-color:#A6A6A6;
+      height:400px;
+      font-family: 'Shrikhand'
+    }
+    #banner3 li img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+    }
+    #banner3 li {
+      list-style-type:none;
+    }
+
+    #banner4 ul{
+      margin-top:30px;
+
+      background-color:#EAEAEA;
+      height:400px;
+      font-family: 'Shrikhand'
+    }
+    #banner4 li img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+    }
+
+    #banner4 li {
+      list-style-type:none;
+    }
+    #banner4 li img {
+      padding:0 20px;
+    }
+
+
+    #banner5 ul{
+      margin-top:30px;
+
+      background-color:#8C8C8C;
+      height:400px;
+      font-family: 'Shrikhand'
+    }
+    #banner5 li img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    }
+
+    #banner5 li {
+      list-style-type:none;
+    }
+
+    #banner6 ul{
+      margin-top:30px;
+
+      background-color:#BDBDBD;
+      height:400px;
+      font-family: 'Shrikhand'
+    }
+    #banner6 li img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    }
+
+    #banner6 li {
+      list-style-type:none;
+    }
+
+
+    #banner7 ul{
+      margin-top:30px;
+
+      background-color:#747474;
+      height:400px;
+      font-family: 'Shrikhand'
+    }
+    #banner7 li img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    }
+
+    #banner7 li {
+      list-style-type:none;
+    }
+
+    .box {
+      display:inline-block;
+      width:500px;
+      height:300px;
+      margin:10px;
+      border:solid 3px #000000;
+      margin-top:50px;
+      background-color:black;
+      color:white;
+    }
+    #member_form{
+        width:460px;
+        margin:0px 0 0 0px;
+        font-family:"돋움";
+        font-size:12px;
+        color:white;
+        padding-top:5px;
+        padding-bottom:10px;
+        border-top:solid 1px #cccccc;
+        border-bottom:solid 1px #cccccc;
+    }
+
+    .cols li{
+      display:inline-block;
+      margin-top:5px;
+      margin-right:40px;
+
+    }
+
+    .cols li.col1{
+      width:100px;
+      text-align:right;
+
+    }
+
+
+    footer {
+      padding:20px 0 0 15px;
+      border-top:solid 3px #000000;
+      color:#666666;
+
+    }
+    footer #footer {
+      float:right;
+    }
+
+      </style>
+  </head>
+
+  <body>
+
+    <div id="page">
+      <header>
+        <img id="logo" src="img/profile2.png" width="50" >
+        <a href="index.html"> <img id="moto" src="img/webname.png"> </a>
+
+        <ul id="top_menu">
+          <li> <a href= "#banner"> namecard </a> | </li>
+          <li> <a href="#banner1">2week</a> | </li>
+          <li> <a href="#banner4">4week</a> | </li>
+          <li> <a href="#banner2">middle test |</a>  </li>
+          <li> <a href="#banner6">8week</a> | </li>
+          <li> <a href="#banner3">10week</a> |</li>
+          <li> <a href="#banner5">11week</a> |</li>
+          <li> <a href="#banner7">12week</a> </li>
+
+        </ul>
+        <div class="clear"></div>
+        <div class="line"></div>
+         </header>
+
+
+      <div id="page">
+        <main>
+          <section id="banner">
+            <ul>
+              <li><img src="img/namecard.png" onmouseover="this.src='img/namecard2.png'
+            " onmouseout="this.src='img/namecard.png'"  ></li>
+            </ul>
+
+
+          </section>
+              </main>
+              </div>
+
+
+              <!--week2-->
+              <div id="page">
+              <main>
+              <section id="banner1">
+              <ul>
+               <br><br>
+                <li><a href="week2/index_21861115.html"> <img src="img/self.png" width="250"> </a></li>
+                <li> <br> 2 Week : Self introduction page </li>
+              </ul>
+              </section>
+              </main>
+              </div>
+
+              <!--week4-->
+              <div id="page">
+              <main>
+              <section id="banner4">
+              <ul>
+               <br><br><br>
+                <li><a href="week4/index3_21861115.html"><img src="img/food1.png" width="200"> </a>
+                <a href="week4/index3_21861115.html"> <img src="img/food2.png" width="200"> </a></li>
+
+                <li> <br> 4 Week : Introducing restaurants page </li>
+              </ul>
+              </section>
+              </main>
+              </div>
+
+
+
+
+              <!--middle test-->
+          <div id="page">
+          <main>
+            <section id="banner2">
+             <ul>
+               <br><br>
+                <li><a href="test/index.html"> <img src="img/travel.png" width="250"> </a></li>
+                <li> <br> Middle test : My Travel Album </li>
+              </ul>
+            </section>
+            </main>
+            </div>
+
+
+            <!--week8-->
+            <div id="page">
+            <main>
+              <section id="banner6">
+               <ul>
+                 <br><br>
+                  <li><a href="week8/index8_21861115.html"><img src="img/ja.png" width="250"></a></li>
+                  <li> <br> 8 week : login / table</li>
+                </ul>
+              </section>
+              </main>
+              </div>
+
+
+            <!--week10-->
+            <div id="page">
+            <main>
+              <section id="banner3">
+               <ul>
+                 <br><br>
+                  <li><a href="week10/index10_21861115.html"> <img src="img/you.png" width="250"> </a></li>
+                  <li> <br> 10 week : Free web page design / My Well-dying Diary </li>
+                </ul>
+              </section>
+              </main>
+              </div>
+
+              <!--week11-->
+              <div id="page">
+              <main>
+              <section id="banner5">
+              <ul>
+               <br><br><br>
+                <li><a href="week11/index11_21861115.html"><img src="img/monkey.png" width="250"> </a></li>
+
+                <li> <br> 11 Week : Free web page design 2 </li>
+              </ul>
+              </section>
+              </main>
+              </div>
+
+              <!--week11-->
+              <div id="page">
+              <main>
+              <section id="banner7">
+              <ul>
+               <br><br><br>
+                <li><a href="week12/12week7.html"><img src="img/bluespring.png" width="250"> </a></li>
+
+                <li> <br> 12 Week : travel photos </li>
+              </ul>
+              </section>
+              </main>
+              </div>
+
+
+
+              <div class="box"> <br> contact me
+                <form>
+                  <ul id="member_form">
+                    <li>
+                      <ul class="cols">
+                        <li class="col1">이름/회사명</li>
+                        <li class="col2"><input type="text"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="cols">
+                        <li class="col1">이메일</li>
+                        <li class="col2"><input type="text">@
+                        <select id="email2">
+                          <option>선택</option>
+                          <option>naver.com</option>
+                          <option>hanmail.net</option>
+                          <option>gmail.com</option>
+                        </select></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="cols">
+                        <li class="col1">제목</li>
+                        <li class="col2"><input type="text"></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="cols">
+                        <li class="col1" id="intro">메세지</li>
+                        <li class="col2">
+                        <textarea rows="5" cols="52"></textarea></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </form>
+                <br>
+                <button type="button">보내기</button>
+                </div> <br><br><br>
+
+                <div id="page">
+                <main>
+                <section id="top_button">
+                <ul>
+
+                  <li><a href="#logo"><img src="img/topbutton.png" width="50"> </a></li>
+                </ul>
+                </section>
+                </main>
+                </div>
+
+
+
+
+    <div id="page">
+      <footer>
+        <article id="footer" class="c_m_3 c_3">
+          <ul>
+            <li>Kaywon University of Art and Design </li>
+            <li> Digital Media Design </li>
+            <li> 21861115 조경아 </li>
+          </ul>
+          </article>
+          </footer>
+            </div>
+
+
+
+  </body>
+</html>
